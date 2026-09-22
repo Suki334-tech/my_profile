@@ -1,0 +1,204 @@
+
+Profilestyle · CSS
+ 
+body {
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 30px 30px 80px;
+    color: #0D0D0D;
+    background: linear-gradient(120deg, #FFE94A, #FF9F4A, #FF3B7B, #7B5CFF, #00E5C4, #FFE94A);
+    background-size: 400% 400%;
+    animation: drift 22s ease infinite;
+}
+ 
+@keyframes drift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+ 
+nav {
+    background-color: #0D0D0D;
+    padding: 18px 26px;
+    border: 4px solid #0D0D0D;
+    box-shadow: 9px 9px 0 #FFE94A;
+    margin-bottom: 60px;
+}
+ 
+nav a {
+    color: #FFE94A;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-block;
+    transition: transform 0.15s, color 0.15s;
+}
+ 
+nav a:hover {
+    color: #00E5C4;
+    transform: translateY(-3px) rotate(-3deg);
+}
+ 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+ 
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4.4rem;
+    line-height: 0.95;
+    letter-spacing: -2.5px;
+    margin: 0 0 12px;
+    color: #FFFFFF;
+    text-shadow:
+        4px 4px 0 #0D0D0D,
+        8px 8px 0 #FF3B7B,
+        12px 12px 0 #7B5CFF;
+    animation: pop 0.7s cubic-bezier(0.34, 1.6, 0.64, 1);
+}
+ 
+@keyframes pop {
+    0%   { transform: scale(0.75) rotate(-4deg); opacity: 0; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+ 
+h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    background-color: #0D0D0D;
+    color: #00E5C4;
+    display: inline-block;
+    padding: 7px 18px;
+    margin: 0 0 45px;
+    transform: rotate(-2deg);
+    box-shadow: 4px 4px 0 #FFFFFF;
+}
+ 
+h3, h4 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.35rem;
+    margin: 0 0 16px;
+    color: #0D0D0D;
+    display: inline-block;
+    border-bottom: 5px solid #FF3B7B;
+    padding-bottom: 2px;
+}
+ 
+p {
+    background-color: #FFFFFF;
+    border: 4px solid #0D0D0D;
+    box-shadow: 10px 10px 0 #0D0D0D;
+    padding: 28px 32px;
+    margin-bottom: 34px;
+    transform: rotate(-0.6deg);
+}
+ 
+div {
+    background-color: #FFFFFF;
+    border: 4px solid #0D0D0D;
+    box-shadow: 10px 10px 0 #0D0D0D;
+    padding: 26px 32px;
+    margin-bottom: 34px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+ 
+div:nth-of-type(1) { transform: rotate(0.8deg); }
+div:nth-of-type(2) { transform: rotate(-1deg); }
+div:nth-of-type(3) { transform: rotate(0.6deg); }
+div:nth-of-type(4) { transform: rotate(-0.5deg); }
+ 
+div:hover {
+    transform: rotate(0deg) scale(1.03);
+    box-shadow: 16px 16px 0 #0D0D0D;
+}
+ 
+div:nth-of-type(1) h4 { border-bottom-color: #FF3B7B; }
+div:nth-of-type(2) h4 { border-bottom-color: #00E5C4; }
+div:nth-of-type(3) h4 { border-bottom-color: #7B5CFF; }
+ 
+ul, ol {
+    padding-left: 26px;
+    margin: 0;
+}
+ 
+li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    transition: transform 0.15s;
+}
+ 
+li:hover {
+    transform: translateX(8px);
+}
+ 
+li::marker {
+    color: #FF3B7B;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #FFFFFF;
+    border: 4px solid #0D0D0D;
+    box-shadow: 10px 10px 0 #0D0D0D;
+}
+ 
+th {
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #0D0D0D;
+    color: #FFE94A;
+    padding: 17px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+ 
+td {
+    padding: 17px;
+    border-bottom: 3px solid #0D0D0D;
+    font-weight: 500;
+}
+ 
+tr:last-child td {
+    border-bottom: none;
+}
+ 
+tr:hover td {
+    background-color: #FFE94A;
+}
+ 
+footer p {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    transform: none;
+}
+ 
+footer {
+    margin-top: 65px;
+    padding: 18px;
+    background-color: #0D0D0D;
+    color: #FFE94A;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    border: 4px solid #0D0D0D;
+    box-shadow: 10px 10px 0 #FFFFFF;
+    transform: rotate(0.4deg);
+}
+ 
