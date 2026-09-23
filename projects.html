@@ -4,43 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Sukhvinder Sidhu">
+    <meta name="description" content="Sukhvinder Sidhu's projects">
+
     <title>My Projects</title>
+
     <link href="profileStyle.css" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="index.html">Go to profile</a></li>
-            <li><a href="projects.html">Go to projects</a></li>
-            <li><a href="https://www.linkedin.com/" target="_blank">My LinkedIn</a></li>
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    LinkedIn ↗
+                </a>
+            </li>
         </ul>
     </nav>
 
-    <section>
-        <h1>Projects</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Project Name</th>
-                    <th>Description</th>
-                    <th>Year</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Cybersecurity Trivia Game</td>
-                    <td>A quiz game that teaches phishing and malware basics</td>
-                    <td>2025</td>
-                </tr>
-                <tr>
-                    <td>Scrabble Score Calculator</td>
-                    <td>Works out the Scrabble score of any word in Java</td>
-                    <td>2026</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+
+    <!-- Projects Header -->
+    <header class="projects-header">
+
+        <p class="small-heading">MY WORK</p>
+
+        <h1>Projects<span>.</span></h1>
+
+        <p class="projects-intro">
+            A collection of projects I've worked on while developing
+            my skills in software development, programming and cybersecurity.
+        </p>
+
+    </header>
+
+
+    <!-- Projects -->
+    <main class="projects-container">
+
+        <!-- Project 1 -->
+        <article class="project-card cyber">
+
+            <div class="project-number">
+                01
+            </div>
+
+            <div class="project-content">
+
+                <p class="project-year">2025</p>
+
+                <h2>Cybersecurity Trivia Game</h2>
+
+                <p>
+                    An interactive quiz game designed to teach users
+                    about phishing and malware through a series of
+                    timed questions and explanations.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Cybersecurity</span>
+                </div>
+
+            </div>
+
+            <div class="project-arrow">
+                ↗
+            </div>
+
+        </article>
+
+
+        <!-- Project 2 -->
+        <article class="project-card scrabble">
+
+            <div class="project-number">
+                02
+            </div>
+
+            <div class="project-content">
+
+                <p class="project-year">2026</p>
+
+                <h2>Scrabble Score Calculator</h2>
+
+                <p>
+                    A Java program that calculates the Scrabble score
+                    of any word by assigning the correct points to
+                    each letter.
+                </p>
+
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>Algorithms</span>
+                    <span>Programming</span>
+                </div>
+
+            </div>
+
+            <div class="project-arrow">
+                ↗
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Copyright &copy; Sparta Global 2026 by Sukhvinder Sidhu
+        </p>
+    </footer>
+
 </body>
 
 </html>
